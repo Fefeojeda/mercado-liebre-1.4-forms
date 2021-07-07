@@ -1,0 +1,199 @@
+/* Tamaños tipográficos */
+.home #container-section-title{
+    font-size: 24px;
+    color: #686a70;
+    margin: 20px 0 40px 0;
+}
+
+.home p{
+    font-size: 12px;
+    font-weight: 500;
+}
+.home a {
+    font-size: 16px;
+    font-weight: 500;
+}
+.home #descuento{
+font-size: 16px;
+color: var(--color-verde);
+}
+.home span{
+    font-size: 18px;
+}
+
+/* Header */
+.home header {
+    background-color: var(--color-amarillo);
+}
+.home .header-wrapper-logo-search {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.home .header-logo {
+    flex-basis: 50%;
+    padding: 10px;
+}
+.home .header-search {
+    flex-basis: 50%;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.home .input-search{
+    width: 100%;
+    padding-left: 15px;
+    display: block;
+    border: none;
+    border-radius: 7px;
+}
+.home .search-button {
+    height: 30px;
+    width: 30px;
+}
+.home .sin-tarjeta {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 700;   
+}
+
+/* Header nav */
+
+/* LINKS EN EL NAV DEL HEADER */
+.home header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    
+}
+.home nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.home .nav-bar-links-left, .nav-bar-links-right{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MENÚ HAMBURGUESA */
+.home .burger-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.home .burger-menu i{
+    color: #FFFFFF;
+    background-color: var(--color-celeste);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 13%;
+}
+
+    /* MAIN */
+.home .container {
+    width: 90%;
+    margin: auto;
+}
+.home #banner {
+    width: 100%;
+}
+
+.products-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.home .container h3{
+    margin-top: 20px;
+    color: #686a70;
+}
+.home .container .box-item{
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.home .item-description{
+    border-top: 1px solid #ebebeb;
+    margin: 0 15px 0 15px;
+    background-color: #FFFFFF;
+    width: 90%;
+    position: relative;
+}
+
+.home .delivery{
+    color: var(--color-verde);
+    border: 1px solid var(--color-verde);
+    border-radius: 50%;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: -15%;
+}
+.item-price-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.item-price-wrapper h2 {font-size: 20px;}
+
+.item-price-wrapper h2, .item-price-wrapper p {
+    flex-basis: 50%;
+}
+
+
+    /* FOOTER */
+.home footer .footer-item-box{
+    text-align: center;
+    margin: 40px;
+    color: var(--color-azul);
+}
+.home footer .footer-item-box i{
+    color: var(--color-celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.home footer #copyright{
+    text-align: center;
+    font-size: 12px;
+    color: var(--color-gris-oscuro); 
+}
+
+/* RESPONSIVE */
+@media (max-width:420px){
+    .box-item #descripcion-articulo{display: none;}
+    main #banner {display: none;}
+    ul{display: none;}
+}
+@media (max-width:769px) and (min-width:420px) {
+    .home .burger-menu {display: none;}
+    .home main .container .box-item {box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+    .home .container .box-item{flex-basis: 45%;}
+    .home .header-logo {flex-basis: 33.3%;}
+    .home .header-search {flex-basis: 33.3%;}
+    .home .sin-tarjeta {flex-basis: 20%;}
+    .home .header-wrapper-logo-search {justify-content: space-between;}
+    .home header li a{font-size: small;}
+}
+
+@media (min-width:769px){
+    .home .burger-menu {display: none;}
+    .home main .container .box-item {box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+    .home .container .box-item{flex-basis: 20%;}
+    .home .header-logo {flex-basis: 33.3%;}
+    .home .header-search {flex-basis: 33.3%;}
+    .home .sin-tarjeta {flex-basis: 20%;}
+    .home .header-wrapper-logo-search {justify-content: space-between;}
+}
